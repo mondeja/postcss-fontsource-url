@@ -39,7 +39,7 @@ export default {
 
 ## Alternative
 
-If you want a more complex solution for the problem, you can use `postcss-url`:
+If you want a more complex solution for the problem, you can use [`postcss-url`]:
 
 ```js
 // postcss.config.mjs
@@ -64,3 +64,4 @@ export default {
 
 [PostCSS]: https://postcss.org
 [`@fontsource`]: https://fontsource.org
+[`postcss-url`]: https://www.npmjs.com/package/postcss-url

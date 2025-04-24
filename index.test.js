@@ -24,7 +24,7 @@ test('throws if no directory option is provided', async () => {
   }
 });
 
-test('rewrites url()', async () => {
+test('rewrites url()s', async () => {
   const input = `@font-face {
     font-family: 'Roboto Mono';
     src: url(./files/roboto-mono-cyrillic-ext-400-normal.woff2) format('woff2'), url(./files/roboto-mono-cyrillic-ext-400-normal.woff) format('woff');
