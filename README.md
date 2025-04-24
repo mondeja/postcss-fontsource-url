@@ -1,5 +1,8 @@
 # postcss-fontsource-url
 
+[![NPM version][npm-version-image]][npm-link]
+[![License][license-image]][license-link]
+
 [PostCSS] plugin that transforms [`@fontsource`] `src` CSS properties values
 to point URLs to your own custom directory.
 
@@ -65,3 +68,7 @@ export default {
 [PostCSS]: https://postcss.org
 [`@fontsource`]: https://fontsource.org
 [`postcss-url`]: https://www.npmjs.com/package/postcss-url
+[npm-link]: https://www.npmjs.com/package/postcss-fontsource-url
+[npm-version-image]: https://img.shields.io/npm/v/postcss-fontsource-url
+[license-image]: https://img.shields.io/npm/l/postcss-fontsource-url?color=blue
+[license-link]: https://github.com/mondeja/postcss-fontsource-url/blob/master/LICENSE

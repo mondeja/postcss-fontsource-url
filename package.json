@@ -1,6 +1,6 @@
 {
   "name": "postcss-fontsource-url",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "PostCSS plugin to rewrite @fontsource CSS URLs",
   "type": "commonjs",
   "keywords": [
