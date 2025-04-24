@@ -2,6 +2,11 @@ yarn-error.log
 npm-debug.log
 package-lock.json
 yarn.lock
+.gitattributes
+.husky
+.prettierignore
+.prettierrc.json
+xo.config.mjs
 
 *.test.js
 .github
