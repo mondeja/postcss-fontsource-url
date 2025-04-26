@@ -40,6 +40,30 @@ export default {
 };
 ```
 
+The imported CSS will be transformed to something like this:
+
+```css
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/roboto-mono-latin-400-normal.woff2') format('woff2'),
+       url('/assets/fonts/roboto-mono-latin-400-normal.woff') format('woff');
+}
+```
+
+From the original CSS:
+
+```css
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./files/roboto-mono-latin-400-normal.woff2') format('woff2'),
+       url('./files/roboto-mono-latin-400-normal.woff') format('woff');
+}
+```
+
 ## Alternative
 
 If you want a more complex solution for the problem, you can use [`postcss-url`]:
