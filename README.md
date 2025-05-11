@@ -3,8 +3,8 @@
 [![NPM version][npm-version-image]][npm-link]
 [![License][license-image]][license-link]
 
-[PostCSS] plugin that transforms [`@fontsource`] `src` CSS properties values
-to point URLs to your own custom directory.
+[PostCSS] plugin that transforms [`@fontsource`] `src` CSS properties values to
+point URLs to your own custom directory.
 
 ## Installation
 
@@ -31,12 +31,14 @@ Move the [`@fontsource`] fonts to your public directory:
 
 ```js
 // postcss.config.mjs
+import postcssImport from 'postcss-import';
 import postcssFontsourceUrl from 'postcss-fontsource-url';
 
 export default {
-  plugins: {
+  plugins: [
+    postcssImport,
     postcssFontsourceUrl({directory: '/assets/fonts'}),
-  },
+  ],
 };
 ```
 
@@ -66,7 +68,8 @@ From the original CSS:
 
 ## Alternative
 
-If you want a more complex solution for the problem, you can use [`postcss-url`]:
+If you need a more specific solution for the problem, use [`postcss-url`]
+directly:
 
 ```js
 // postcss.config.mjs
